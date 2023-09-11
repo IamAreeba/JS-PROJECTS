@@ -1,0 +1,46 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f7fb;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 420px;
+    /* background: gray; */
+}
+
+.container .box{    
+    position: relative;
+    height: 160px;
+    width: 160px;
+    border: 2px solid black;
+    border-radius: 10px
+}
+
+.box .image{
+    height: 100%;
+    width:m 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/MinePic01.jpeg);
+}
+
+.box.hovered{
+    border: 2px dashed black;
+}
