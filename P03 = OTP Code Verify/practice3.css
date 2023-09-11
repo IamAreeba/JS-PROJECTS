@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4070f4;
+}
+
+
+:where(.container, form, .input-box, header){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: #fff;
+    padding: 90px 100px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container header{
+    height: 65px;
+    width: 65px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: #4070f4;
+}
+
+
+.container h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+}
+
+form .input-box{
+    flex-direction: row;
+    column-gap: 10px;
+    /* margin-bottom: 10px; */
+    
+}
+
+.input-box input{
+    height: 45px;
+    width: 43px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border-radius: 1px solid #ddd;
+}
+
+/* To remove the scroll bar of button */
+.input-box input::-webkit-inner-spin-button,
+.input-box input::-webkit-outer-spin-button{
+    display: none;
+}
+
+form button{
+    margin-top: 25px;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #6e93f7;
+    transition: all 0.2s ease;
+}
+form button.active{
+    background: #4070f4;
+    pointer-events: auto;
+}
+
+form button:hover{
+    background: #0e4bf1;
+}
