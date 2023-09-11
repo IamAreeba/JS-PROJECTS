@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#ffd195, #ffb28b);
+}
+
+.rating-box{
+    background: #fff;
+    padding: 25px 50px 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.rating-box header{
+    font-size: 22px;
+    color: #dadada; 
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.rating-box .stars{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.stars i{
+    font-size: 35px;
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.stars i.active{
+    color: #ff9c1a;
+}
