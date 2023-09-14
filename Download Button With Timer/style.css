@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@200;300;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f2f9;
+}
+
+
+.download-btn{
+    display: flex;
+    align-items:center;
+    padding: 16px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    background: #4898f7;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.download-btn:hover{
+    background-color: #2382f6;
+}
+
+.download-btn .icon{
+    font-size: 2rem;
+}
+
+.download-btn .text{
+    font-size: 1.6rem;
+}
+
+
+.download-btn.timer{
+    color: #000;
+    background: none;
+    font-size: 1.6rem;
+    pointer-events: none;
+    transition: none;
+    box-shadow: none;
+}
+
+.download-btn.timer b{
+    color: #2382f6;
+    padding: 0 8px;
+}
